@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 이거 하는 이유는 애뮬레이터 통신을 위한것임 -->
+<!--<network-security-config>-->
+<!--<domain-config cleartextTrafficPermitted="true">-->
+<!--    <domain includeSubdomains="true">dummy.restapiexample.com/</domain>-->
+<!--</domain-config>-->
+<!--</network-security-config>-->
+
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
